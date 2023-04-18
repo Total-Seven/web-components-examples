@@ -1,19 +1,35 @@
 # web-components-examples
-A series of web components examples, related to the MDN web components documentation at https://developer.mozilla.org/en-US/docs/Web/Web_Components.
+一系列Web Components基础例子 at https://developer.mozilla.org/en-US/docs/Web/Web_Components.
 
 > Please refer to our [contribution guidelines](https://github.com/mdn/web-components-examples/blob/main/CONTRIBUTING.md) before contributing.
 
-The following examples are available:
 
-* [composed-composed-path](composed-composed-path). A very simple example that shows the behavior of the <code>Event</code> object <code>composed</code> and <code>composedPath</code> properties. [See composed-composed-path live](https://mdn.github.io/web-components-examples/composed-composed-path/).
-* [defined-pseudo-class](defined-pseudo-class). A very simple example that shows how the <code>[:defined pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:defined)</code> works. [See defined-pseudo-class live](https://mdn.github.io/web-components-examples/defined-pseudo-class/).
-* [editable-list](editable-list) – <code>&lt;editable-list&gt;</code>.  A simple example showing how elements can be consolidated to create a list with addable/removable items.  Items are added by using a `list-item` attribute or by entering text and clicking the plus sign. [See editable-list live](https://mdn.github.io/web-components-examples/editable-list/).
-* [edit-word](edit-word) — <code>&lt;edit-word&gt;</code>. Wrapping one or more words in this element means that you can then click/focus the element to reveal a text input that can then be used to edit the word(s). [See edit-word live](https://mdn.github.io/web-components-examples/edit-word/).
-* [element-details](element-details) — <code>&lt;element-details&gt;</code>. Displays a box containing an HTML element name and description. Provides an example of an autonomous custom element that gets its structure from a <code>&lt;template&gt;</code> element (that also has its own styling defined), and also contains <code>&lt;slot&gt;</code> elements populated at runtime. [See element-details live](https://mdn.github.io/web-components-examples/element-details/).
-* [expanding-list-web-component](expanding-list-web-component) — <code>&lt;ul is="expanding-list"&gt;</code>. Creates an unordered list with expandable/collapsible children. Provides an example of a customized built-in element (the class inherits from <code>HTMLUListElement</code> rather than <code>HTMLElement</code>). [See expanding-list live](https://mdn.github.io/web-components-examples/expanding-list-web-component/).
-* [life-cycle-callbacks](life-cycle-callbacks) — <code>&lt;custom-square l="" c=""&gt;</code>. A trivial example web component that creates a square colored box on the page. The demo also includes buttons to create, destroy, and change attributes on the element, to demonstrate how the [web components life cycle callbacks](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks) work [See life-cycle-callbacks live](https://mdn.github.io/web-components-examples/life-cycle-callbacks/).
-* [popup-info-box-web-component](popup-info-box-web-component) — <code>&lt;popup-info img="" text=""&gt;</code>. Creates an info icon that when focused displays a popup info box. Provides an example of an autonomous custom element that takes information from its attributes, and defines structure and basic style in an attached shadow DOM. [See popup-info-box live](https://mdn.github.io/web-components-examples/popup-info-box-web-component/).
-* [simple-template](simple-template) — A very simple trivial example that quickly demonstrates usage of the <code>&lt;template&gt;</code> and <code>&lt;slot&gt;</code> elements. [See simple-template live](https://mdn.github.io/web-components-examples/simple-template/).
-* [slotchange example](slotchange) — <code>&lt;summary-display&gt;</code>. An example that takes as its two slot values a list of possible choices, and a description for the selected choice. Multiple paragraphs are included inside the element containing all the possible descriptions; when a choice is clicked, its corresponding description paragraph is given an appropriate slot attribute so that it appears in the second slot. This example is written to demonstrate usage of the slotchange attribute, and features of the HTMLSlotElement interface [See the slotchange example live](https://mdn.github.io/web-components-examples/slotchange).
-* [slotted-pseudo-element](slotted-pseudo-element). A very simple example that shows how the <code>::slotted</code> pseudo-element works. [See slotted-pseudo-element live](https://mdn.github.io/web-components-examples/slotted-pseudo-element/).
-* [word-count-web-component](word-count-web-component) — <code>&lt;word-count&gt;</code>. When added to an element, counts all the words inside that element and displays them inside an attached shadow DOM. It also contains an interval that periodically updates the word count as it changes. Provides an example of a customized built-in element (the class inherits from <code>HTMLParagraphElement</code> rather than <code>HTMLElement</code>). [See word-count live](https://mdn.github.io/web-components-examples/word-count-web-component/).
+1. `composed-composed-path`  - - 展示了“click”的可传播性 和 传播路径 （关于shadow DOM ⇒ 主 DOM）
+
+1. `defined-pseudo-class` - - 展示了 伪类 `***:defined`*** 
+
+1. `edit-word`  - -  一个实战例子。 🌝🌝🌝
+
+1. `element-details`  - - 展示了关于`***<details>***`标签和***`<summary>`***的使用，同时还有dl、dt、dd的使用。
+
+1. `host-selectors`  - - 展示了关于host与shadow DOM 的选择器 。可以提高配置型 🌝🌝🌝🌝🌝
+
+1. `slotchange`  - - 一个事件***`slotchange`***，关于插槽本身的改变，监听不到子标签；一个方法 **`HTMLSlotElement: assignedNodes()`**，可以获取插槽内的NodeList 。🌝🌝🌝
+
+1. `slotted-pseudo-element`  - - 关于伪类选择器： `g::slotted(*)` 选择已经嵌入外部内容的插槽 🌝🌝
+
+1. `word-count-web-component`  - - `**继承**`了内部类HTMLParagraphElement  🌝🌝🌝🌝🌝 
+
+1. simple-template
+
+1. shadow-part
+
+1. popup-info-box-web-component
+
+1. popup-info-box-external-stylesheet
+
+1. life-cycle-callbacks
+
+1. expanding-list-web-component
+
+1. editable-list
